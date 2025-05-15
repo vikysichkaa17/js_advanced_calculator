@@ -20,7 +20,9 @@ function makeCalculator() {
     },
 
     divide(num) {
-      return calculator.result / num;
+      calculator.result /= num;
+
+      return calculator.result;
     },
 
     operate(callback, number) {
