@@ -8,15 +8,21 @@ function makeCalculator() {
     result: 0,
 
     add(num) {
-      return calculator.result + num;
+      calculator.result += num;
+
+      return calculator.result;
     },
 
     subtract(num) {
-      return calculator.result - num;
+      calculator.result -= num;
+
+      return calculator.result;
     },
 
     multiply(num) {
-      return calculator.result * num;
+      calculator.result *= num;
+
+      return calculator.result;
     },
 
     divide(num) {
